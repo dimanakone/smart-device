@@ -123,9 +123,9 @@
       content: "";
       left: 0;
       top: 0;
-      width: 1000%;
+      width: calc(100% + 50px);
       height: 100%;
-      margin-left: -30px;
+      margin-left: -25px;
       border-top: 1px solid $color-border-white;
       border-bottom: 1px solid $color-border-white;
     }
@@ -234,9 +234,9 @@
       content: "";
       left: 0;
       top: 0;
-      width: 1000%;
+      width: calc(100% + 50px);
       height: 100%;
-      margin-left: -30px;
+      margin-left: -25px;
       border-bottom: 1px solid $color-border-white;
     }
   }

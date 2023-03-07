@@ -745,8 +745,63 @@ button,
   opacity: 0.5;
 }
 
-.main {
-  height: 100vh;
+.preview {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url(../img/background/bg-main-dekstop@1x.png) center no-repeat;
+  background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-dekstop@1x.png) center no-repeat;
+  background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-dekstop@1x.png) center no-repeat;
+  background-size: cover;
+  min-height: 880px;
+}
+
+.preview__wrap {
+  padding: 305px 125px 280px;
+}
+
+.preview h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+}
+
+.preview p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: #f2f5f7;
+}
+
+.preview__button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 25px;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  color: #f2f5f7;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.preview__button:hover {
+  opacity: 0.7;
+}
+
+.preview__button:active {
+  opacity: 0.5;
 }
 
 .footer {
@@ -987,6 +1042,32 @@ button,
     display: none;
   }
 
+  .preview {
+    min-height: 640px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url(../img/background/bg-main-tablet@1x.png) center no-repeat;
+    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-tablet@1x.png) center no-repeat;
+    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-tablet@1x.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .preview__wrap {
+    padding: 180px 0 205px;
+  }
+
+  .preview h1 {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .preview p {
+    margin-bottom: 50px;
+  }
+
+  .preview__button {
+    margin-left: 45px;
+  }
+
   .footer__wrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1052,6 +1133,43 @@ button,
     margin-right: 10px;
   }
 
+  .preview {
+    min-height: 560px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url(../img/background/bg-main-mobile@1x.png) center no-repeat;
+    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-mobile@1x.png) center no-repeat;
+    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/background/bg-main-mobile@1x.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .preview__wrap {
+    padding: 150px 0 190px;
+  }
+
+  .preview h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .preview p {
+    max-width: 400px;
+    font-size: 14px;
+  }
+
+  .preview br {
+    display: none;
+  }
+
+  .preview__button {
+    min-width: 270px;
+    margin-left: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .preview__button-text-desktop {
+    display: none;
+  }
+
   .footer {
     padding: 35px 0 35px;
   }
@@ -1099,9 +1217,9 @@ button,
     content: "";
     left: 0;
     top: 0;
-    width: 1000%;
+    width: calc(100% + 50px);
     height: 100%;
-    margin-left: -30px;
+    margin-left: -25px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
@@ -1130,9 +1248,9 @@ button,
     content: "";
     left: 0;
     top: 0;
-    width: 1000%;
+    width: calc(100% + 50px);
     height: 100%;
-    margin-left: -30px;
+    margin-left: -25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
