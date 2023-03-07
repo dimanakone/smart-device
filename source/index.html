@@ -1,67 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preaload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preaload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preaload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
-    <title>Smart Device</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preaload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preaload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preaload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <a class="header__logo-link" href="#">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+            <img src="img/logo.svg" width="215" height="55" alt="Логотип компании Smart Device">
+          </picture>
+        </a>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="mailto:info@sd.ru">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <span class="header__contacts-text">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="tel:74950005252">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone-call"></use>
+              </svg>
+              <span class="header__contacts-text">+7 (495) 000 52 52</span>
+            </a>
+          </li>
+        </ul>
+        <a class="header__button" href="#">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main"></main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__wrap">
+        <div class="footer__logo-social-wrap">
+          <a href="#" class="footer__logo-link">
+            <img class="footer__logo" src="img/logo.svg" width="215" height="55" alt="Логотип компании Smart Device">
+          </a>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="footer__social-icon" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="footer__social-icon" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <span class="visually-hidden">Pinterest</span>
+                <svg class="footer__social-icon" width="30" height="30">
+                  <use xlink:href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__navigation accordion accordion--open">
+          <div class="accordion__trigger">
+            <h2>Разделы сайта</h2>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          <ul class="footer__nav-list accordion__content">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">О Компаниии</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--products">
+              <a class="footer__nav-link" href="#">Продукты</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--production">
+              <a class="footer__nav-link" href="#">Производство печатных <br> плат</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--montage">
+              <a class="footer__nav-link" href="#">Монтаж печатных плат</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--accessories">
+              <a class="footer__nav-link" href="#">Комплектующие</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--delivery">
+              <a class="footer__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--contacts">
+              <a class="footer__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts accordion accordion--open">
+          <div class="accordion__trigger">
+            <h2>Наш офис</h2>
+          </div>
+          <ul class="footer__contacts-list accordion__content">
+            <li class="footer__contacts-item">
+              <address class="footer__contacts-address">г. Мытищи, Олимпийский проспект, <br> д.10</address>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
+  </footer>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

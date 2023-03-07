@@ -1,0 +1,40 @@
+.accordion__trigger {
+  @media (max-width: $vp-768) {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background-color: $color-border-white;
+      right: 27px;
+      top: 5px;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.accordion--open .accordion__trigger {
+  @media (max-width: $vp-768) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.accordion__content {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.accordion--open .accordion__content {
+  @media (max-width: $vp-768) {
+    display: grid;
+  }
+}
