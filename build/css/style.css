@@ -1278,8 +1278,8 @@ button,
     width: 15px;
     height: 1px;
     background-color: rgba(248, 253, 255, 0.7);
-    right: 27px;
-    top: 5px;
+    right: 0px;
+    top: 7px;
   }
 
   .accordion__trigger::after {
