@@ -5,12 +5,24 @@
   background-size: cover;
   min-height: 880px;
 
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+      url(../img/background/bg-main-dekstop@2x.png) center no-repeat;
+  }
+
   @media (max-width: $vp-1024) {
     min-height: 640px;
     background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
       url(../img/background/bg-main-tablet@1x.png) center no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background:
+      linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+      url(../img/background/bg-main-tablet@2x.png) center no-repeat;
+    }
   }
 
   @media (max-width: $vp-768) {
@@ -19,6 +31,12 @@
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
       url(../img/background/bg-main-mobile@1x.png) center no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background:
+      linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+      url(../img/background/bg-main-mobile@2x.png) center no-repeat;
+    }
   }
 }
 

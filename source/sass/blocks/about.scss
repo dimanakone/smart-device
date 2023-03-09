@@ -35,17 +35,9 @@
   font-size: 16px;
   line-height: 22px;
 
-  &:last-of-type {
-    margin-bottom: 35px;
-  }
-
   @media (max-width: $vp-768) {
     font-size: 14px;
     line-height: 19px;
-
-    &:last-of-type {
-      margin-bottom: 20px;
-    }
   }
 }
 
@@ -61,6 +53,7 @@
   display: block;
   min-width: 180px;
   min-height: 45px;
+  margin-top: 35px;
   padding: 15px 15px;
   border: 1px solid $color-deep-sky-blue;
   border-radius: 3px;
@@ -73,6 +66,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-deep-sky-blue;
+
+  @media (max-width: $vp-768) {
+    margin-top: 0;
+  }
 
   @media (max-width: $vp-768) {
     min-width: 160px;
