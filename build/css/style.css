@@ -894,16 +894,22 @@ button,
   margin-bottom: 35px;
 }
 
+.about__text-hidden {
+  display: none;
+}
+
+.about__text-hidden--active {
+  display: block;
+}
+
 .about__button {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   min-width: 180px;
   min-height: 45px;
   padding: 15px 15px;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  background-color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
