@@ -85,6 +85,7 @@ export class Form {
     }
 
     const phoneParents = form.querySelectorAll('[data-validate-type="phone"]');
+
     phoneParents.forEach((item) => this._initPhoneInput(item));
 
     const callback = parent.dataset.callback;

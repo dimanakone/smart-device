@@ -21,9 +21,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+
     const form = new Form();
-    window.form = form;
     form.init();
+    window.form = form;
+
+    const inputPhone = document.querySelector('[data-validate-type="phone"]');
+    window.form.initPhoneInput(inputPhone);
+
+    const feedback = document.querySelector('form');
+    window.form.validateForm(feedback);
   });
 });
 
