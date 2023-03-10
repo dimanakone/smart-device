@@ -26,8 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     window.form = form;
 
-    const inputPhone = document.querySelector('[data-validate-type="phone"]');
-    window.form.initPhoneInput(inputPhone);
+    const inputsPhone = document.querySelectorAll('[data-validate-type="phone"]');
+    inputsPhone.forEach((input) => {
+      window.form.initPhoneInput(input);
+    });
 
     const feedback = document.querySelector('form');
     window.form.validateForm(feedback);
