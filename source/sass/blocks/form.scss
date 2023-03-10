@@ -1,6 +1,6 @@
 .form {
   background-color: $color-deep-sky-blue;
-  background-image: url(../img/background/polygon.png);
+  background-image: url("../img/background/polygon.png");
   background-size: 50%;
   background-position: top left;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
     position: absolute;
     width: 510px;
     height: 285px;
-    background-image: url(../../img/background/paper-airplane@1x.png);
+    background-image: url("../../img/background/paper-airplane@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
     left: 0;
@@ -46,7 +46,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/background/paper-airplane@2x.png);
+      background-image: url("../../img/background/paper-airplane@2x.png");
     }
 
     @media (max-width: $vp-1024) {
@@ -67,7 +67,7 @@
 .form h3 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -154,7 +154,7 @@
   width: 265px;
   margin-right: 50px;
   padding: 15px 25px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -204,7 +204,6 @@
     white-space: nowrap;
     border: 0;
     clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
   }
 
@@ -224,7 +223,7 @@
       width: 15px;
       height: 15px;
       border-radius: 2px;
-      border: 1px solid #fff;
+      border: 1px solid $color-default-white;
       top: 7px;
       left: 0;
     }

@@ -45,7 +45,7 @@
 
   &::before {
     position: absolute;
-    content:'';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -65,12 +65,12 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     right: 0;
     width: 60px;
     height: 60px;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
     background-color: $color-deep-sky-blue;
     z-index: 2;
 
@@ -82,12 +82,12 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 26px;
     right: 26px;
     width: 4px;
     height: 8px;
-    background-image: url(../img/svg/arrow.svg);
+    background-image: url("../img/svg/arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
@@ -103,7 +103,7 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 50px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -137,7 +137,7 @@
   left: 40px;
   width: 170px;
   margin: 0;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -1,27 +1,27 @@
 .preview {
   background:
     linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-    url(../img/background/bg-main-dekstop@1x.png) center no-repeat;
+    url("../img/background/bg-main-dekstop@1x.png") center no-repeat;
   background-size: cover;
   min-height: 880px;
 
   @media (min-resolution: 2dppx) {
     background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url(../img/background/bg-main-dekstop@2x.png) center no-repeat;
+      url("../img/background/bg-main-dekstop@2x.png") center no-repeat;
   }
 
   @media (max-width: $vp-1024) {
     min-height: 640px;
     background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url(../img/background/bg-main-tablet@1x.png) center no-repeat;
+      url("../img/background/bg-main-tablet@1x.png") center no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url(../img/background/bg-main-tablet@2x.png) center no-repeat;
+      url("../img/background/bg-main-tablet@2x.png") center no-repeat;
     }
   }
 
@@ -29,13 +29,13 @@
     min-height: 560px;
     background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url(../img/background/bg-main-mobile@1x.png) center no-repeat;
+      url("../img/background/bg-main-mobile@1x.png") center no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background:
       linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url(../img/background/bg-main-mobile@2x.png) center no-repeat;
+      url("../img/background/bg-main-mobile@2x.png") center no-repeat;
     }
   }
 }
@@ -55,7 +55,7 @@
 .preview h1 {
   margin-top: 0;
   margin-bottom: 40px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -107,7 +107,7 @@
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
   color: $color-alice-blue;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;

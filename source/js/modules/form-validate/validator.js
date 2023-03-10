@@ -62,7 +62,6 @@ export class Validator {
   }
 
   _validateTextInput(parent, input) {
-    console.log(input);
     let flag = true;
     if (input.value.length >= (+input.getAttribute('minlength') || 1)) {
       this._setItemValidState(parent, input);
@@ -292,7 +291,6 @@ export class Validator {
   }
 
   validateForm(form) {
-    console.log(form);
     const validateItems = form.querySelectorAll('[data-validate-type]');
     const result = this._fullValidate(validateItems);
     return result;

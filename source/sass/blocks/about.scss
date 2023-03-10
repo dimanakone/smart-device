@@ -1,7 +1,7 @@
 .about__wrap {
   padding-left: 250px;
   padding-bottom: 100px;
-  background: #ffffff url(../img/background/2022@1x.png) left top no-repeat;
+  background: #ffffff url("../img/background/2022@1x.png") left top no-repeat;
 
   @media (max-width: $vp-1024) {
     padding-left: 179px;
@@ -17,7 +17,7 @@
 .about h2 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -58,7 +58,7 @@
   border: 1px solid $color-deep-sky-blue;
   border-radius: 3px;
   background-color: $color-default-white;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

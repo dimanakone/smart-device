@@ -92,7 +92,7 @@
   }
 }
 
-.footer__social-link  {
+.footer__social-link {
   min-height: 40px;
   display: flex;
   justify-content: center;
@@ -105,7 +105,6 @@
   &:active {
     opacity: 0.5;
   }
-
 }
 
 .footer__navigation {
@@ -139,7 +138,7 @@
 .footer__navigation h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
@@ -216,7 +215,6 @@
   &:active {
     opacity: 0.5;
   }
-
 }
 
 .footer__contacts {
@@ -249,7 +247,7 @@
 .footer__contacts h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
@@ -300,5 +298,3 @@
 .footer__contacts-address {
   font-style: normal;
 }
-
-
