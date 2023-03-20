@@ -113,6 +113,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px 30px;
 
+  @media (min-width: $vp-1024) and (max-width: $vp-1920) {
+    width: auto;
+  }
+
   @media (max-width: $vp-1024) {
     width: auto;
     margin-left: 0;

@@ -130,7 +130,7 @@
 .header__button {
   min-width: 160px;
   display: block;
-  padding: 7px 15px 13px;
+  padding: 10px 15px 12px;
   margin-left: 171px;
   margin-bottom: 4px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -144,6 +144,10 @@
   background-color: transparent;
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
+
+  @media (min-width: $vp-1024) and (max-width: $vp-1920) {
+    margin-left: auto;
+  }
 
   @media (max-width: $vp-1024) {
     display: none;

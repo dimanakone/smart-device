@@ -1,5 +1,6 @@
 .accordion__trigger {
   @media (max-width: $vp-768) {
+    padding-right: 30px;
     position: relative;
 
     &::before,

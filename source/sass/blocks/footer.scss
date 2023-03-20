@@ -115,10 +115,12 @@
 
 .footer__navigation {
   padding-top: 7px;
+  margin-left: 30px;
   margin-right: 30px;
 
   @media (max-width: $vp-1024) {
     padding-top: 0;
+    margin-left: 0;
     margin-right: 0;
   }
 
@@ -226,6 +228,10 @@
 .footer__contacts {
   margin-left: 95px;
   padding-top: 7px;
+
+  @media (min-width: $vp-1024) and (max-width: $vp-1920)  {
+    margin-left: auto;
+  }
 
   @media (max-width: $vp-1024) {
     padding-top: 0;

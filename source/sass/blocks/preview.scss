@@ -20,8 +20,8 @@
 
     @media (min-resolution: 2dppx) {
       background:
-      linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url("../img/background/bg-main-tablet@2x.png") center no-repeat;
+        linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+        url("../img/background/bg-main-tablet@2x.png") center no-repeat;
     }
   }
 
@@ -34,8 +34,8 @@
 
     @media (min-resolution: 2dppx) {
       background:
-      linear-gradient(to top, $color-black-transparent, $color-black-transparent),
-      url("../img/background/bg-main-mobile@2x.png") center no-repeat;
+        linear-gradient(to top, $color-black-transparent, $color-black-transparent),
+        url("../img/background/bg-main-mobile@2x.png") center no-repeat;
     }
   }
 }
