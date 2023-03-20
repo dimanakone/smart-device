@@ -12,7 +12,7 @@
 
 .form__wrap {
   position: relative;
-  padding-top: 170px;
+  padding-top: 166px;
   padding-bottom: 250px;
   padding-left: 620px;
 
@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $vp-1024) {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 130px;
     padding-left: 0;
   }
@@ -56,7 +56,7 @@
 }
 
 .form form {
-  width: 585px;
+  width: 595px;
   margin-left: auto;
 
   @media (max-width: $vp-1920) {
@@ -66,7 +66,7 @@
 
 .form h3 {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,39 +75,49 @@
   color: $color-default-white;
 
   @media (max-width: $vp-1024) {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   @media (max-width: $vp-768) {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
   }
 }
 
 .form p {
   margin-top: 0;
   margin-bottom: 35px;
+  margin-left: 4px;
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
 
   @media (max-width: $vp-1024) {
     margin-bottom: 25px;
+    margin-left: 0;
   }
 
   @media (max-width: $vp-768) {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 
 .form__elements-wrap {
-  margin-bottom: 35px;
+  width: 580px;
+  margin-bottom: 33px;
+  margin-left: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 30px;
+
+  @media (max-width: $vp-1024) {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 36px;
+  }
 
   @media (max-width: $vp-768) {
     grid-template-columns: 1fr;
@@ -133,6 +143,15 @@
   display: block;
   min-height: 155px;
   padding: 25px 15px;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 31px;
+  }
+
+  @media (max-width: $vp-768) {
+    min-height: 180px;
+    padding-top: 25px;
+  }
 }
 
 .form input {
@@ -152,8 +171,9 @@
 .form button {
   min-height: 45px;
   width: 265px;
+  margin-left: 6px;
   margin-right: 50px;
-  padding: 15px 25px;
+  padding: 13px 25px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -167,6 +187,7 @@
   border-radius: 3px;
 
   @media (max-width: $vp-1024) {
+    margin-left: 0;
     margin-right: 85px;
   }
 
@@ -174,6 +195,14 @@
     width: 270px;
     margin-left: 0;
     margin-bottom: 25px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
@@ -189,7 +218,12 @@
   &--checkbox {
     align-self: flex-end;
 
+    @media (max-width: $vp-1024) {
+      margin-bottom: 4px;
+    }
+
     @media (max-width: $vp-768) {
+      margin-left: 5px;
       align-self: flex-start;
     }
   }
