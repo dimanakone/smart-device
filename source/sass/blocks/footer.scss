@@ -229,7 +229,7 @@
   margin-left: 95px;
   padding-top: 7px;
 
-  @media (min-width: $vp-1024) and (max-width: $vp-1920)  {
+  @media (min-width: $vp-1024) and (max-width: $vp-1920) {
     margin-left: auto;
   }
 
@@ -287,7 +287,6 @@
 
 .footer__contacts-phone,
 .footer__contacts-address {
-  font-family: "PT Mono", "Arial", sans-serif;
   color: $color-white-transparent;
   font-weight: 400;
   font-size: 16px;

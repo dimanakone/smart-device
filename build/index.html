@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -41,7 +41,7 @@
             </a>
           </li>
         </ul>
-        <button class="header__button" href="#" data-open-modal="modal">Заказать звонок</button>
+        <button class="header__button" data-open-modal="modal">Заказать звонок</button>
       </div>
     </div>
   </header>
@@ -78,14 +78,14 @@
               <h3>Крупные поставщики</h3>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--third">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#detective"></use>
               </svg>
               <h3>Полная конфиденциальность</h3>
               <p>По&nbsp;желанию клиента  &nbsp;мы&nbsp;обеспечиваем полную конфиденциальность.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--fourth">
               <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="img/sprite.svg#tag"></use>
               </svg>
@@ -105,7 +105,7 @@
           <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__text-mobile">Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
           <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
           <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
-          <button href="#" class="about__button">Подробнее</button>
+          <button class="about__button">Подробнее</button>
         </div>
       </div>
     </section>
@@ -282,35 +282,33 @@
 
     </div>
 
-    </div>
-
   </footer>
 
   <div class="modal" data-modal="modal">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal=""></div>
       <div class="modal__content">
-        <div class="modal__form">
-          <h2>Закажите звонок</h2>
+        <div class="modal__form form form--modal">
+          <h3>Закажите звонок</h3>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form action="https://echo.htmlacademy.ru" method="POST">
-            <div class="modal__elements-wrap">
-              <div class="modal__field-wrap">
+            <div class="form__elements-wrap form__elements-wrap--modal">
+              <div class="form__field-wrap">
                 <label class="visually-hidden" for="name-modal">Ваше имя</label>
                 <input type="text" id="name-modal" name="name-modal" placeholder="Имя" required data-focus="">
               </div>
-              <div class="modal__field-wrap" data-validate-type="phone">
+              <div class="form__field-wrap" data-validate-type="phone">
                 <label class="visually-hidden" for="phone-modal">Ваше телефон</label>
                 <input type="tel" id="phone-modal" name="phone-modal" placeholder="Телефон" required>
               </div>
-              <div class="modal__field-wrap modal__field-wrap--textarea">
+              <div class="form__field-wrap form__field-wrap--textarea">
                 <label class="visually-hidden" for="text-modal">Ваш вопрос</label>
                 <textarea name="text-modal" id="text-modal" placeholder="Ваш вопрос"></textarea>
               </div>
             </div>
-            <div class="modal__button-wrap">
+            <div class="form__button-wrap form__button-wrap--modal">
               <button type="submit">Задать вопрос</button>
-              <div class="modal__field-wrap modal__field-wrap--checkbox">
+              <div class="form__field-wrap form__field-wrap--checkbox form__field-wrap--modal">
                 <input type="checkbox" id="consent-modal" name="consent-modal" checked required>
                 <label for="consent-modal">Я согласен на обработку  персональных данных</label>
               </div>

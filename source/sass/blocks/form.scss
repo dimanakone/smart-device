@@ -8,6 +8,10 @@
   @media (max-width: $vp-1024) {
     background-image: none;
   }
+
+  &--modal {
+    background-image: none;
+  }
 }
 
 .form__wrap {
@@ -35,7 +39,7 @@
     position: absolute;
     width: 510px;
     height: 285px;
-    background-image: url("../../img/background/paper-airplane@1x.png");
+    background-image: url("../img/background/paper-airplane@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
     left: 0;
@@ -46,7 +50,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background/paper-airplane@2x.png");
+      background-image: url("../img/background/paper-airplane@2x.png");
     }
 
     @media (max-width: $vp-1024) {
@@ -85,6 +89,10 @@
   }
 }
 
+.form--modal h3 {
+  margin-bottom: 15px;
+}
+
 .form p {
   margin-top: 0;
   margin-bottom: 35px;
@@ -103,6 +111,11 @@
     line-height: 19px;
     margin-bottom: 33px;
   }
+}
+
+.form--modal p {
+  margin-bottom: 40px;
+  margin-left: 0;
 }
 
 .form__elements-wrap {
@@ -127,6 +140,13 @@
     grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 30px;
+  }
+
+  &--modal {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -170,6 +190,10 @@
   @media (max-width: $vp-768) {
     flex-direction: column;
   }
+
+  &--modal {
+    flex-direction: column;
+  }
 }
 
 .form button {
@@ -208,6 +232,12 @@
   &:active {
     opacity: 0.5;
   }
+}
+
+.form--modal button {
+  margin-left: 0;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form__field-wrap {
@@ -284,5 +314,17 @@
   &--checkbox input:focus + label {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: 7px;
+  }
+}
+
+.form__button-wrap--modal .form__field-wrap--checkbox {
+  align-self: center;
+}
+
+.form__field-wrap--modal label {
+  max-width: none;
+
+  &::before {
+    top: 0;
   }
 }
