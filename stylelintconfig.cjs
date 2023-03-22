@@ -153,7 +153,7 @@ module.exports = {
     'selector-pseudo-element-no-unknown': true,
 
     'string-no-newline': true,
-    'unit-no-unknown': true,
+    'unit-no-unknown': [true, {ignoreFunctions: ["image-set"]}],
 
     'color-no-invalid-hex': true,
     'color-no-hex': null,

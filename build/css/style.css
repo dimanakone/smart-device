@@ -763,11 +763,14 @@ button,
 }
 
 .preview {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-desktop@1x.png") center no-repeat;
-  background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-desktop@1x.png") center no-repeat;
-  background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-desktop@1x.png") center no-repeat;
-  background-size: cover;
   min-height: 880px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/background/bg-main-desktop@1x.webp") 1x, url("../img/background/bg-main-desktop@2x.webp") 2x, url("../img/background/bg-main-desktop@1x.jpg") 1x, url("../img/background/bg-main-desktop@2x.jpg") 2x);
+  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-desktop@1x.webp") 1x, url("../img/background/bg-main-desktop@2x.webp") 2x, url("../img/background/bg-main-desktop@1x.jpg") 1x, url("../img/background/bg-main-desktop@2x.jpg") 2x);
+  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), -webkit-image-set(url("../img/background/bg-main-desktop@1x.webp") 1x, url("../img/background/bg-main-desktop@2x.webp") 2x, url("../img/background/bg-main-desktop@1x.jpg") 1x, url("../img/background/bg-main-desktop@2x.jpg") 2x);
+  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-desktop@1x.webp") 1x, url("../img/background/bg-main-desktop@2x.webp") 2x, url("../img/background/bg-main-desktop@1x.jpg") 1x, url("../img/background/bg-main-desktop@2x.jpg") 2x);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .preview__wrap {
@@ -1094,7 +1097,8 @@ button,
   position: absolute;
   width: 510px;
   height: 285px;
-  background-image: url("../img/background/paper-airplane@1x.png");
+  background-image: -webkit-image-set(url("../img/background/paper-airplane@1x.webp") 1x, url("../img/background/paper-airplane@2x.webp") 2x, url("../img/background/paper-airplane@1x.png") 1x, url("../img/background/paper-airplane@2x.png") 2x);
+  background-image: image-set(url("../img/background/paper-airplane@1x.webp") 1x, url("../img/background/paper-airplane@2x.webp") 2x, url("../img/background/paper-airplane@1x.png") 1x, url("../img/background/paper-airplane@2x.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
   left: 0;
@@ -1607,7 +1611,7 @@ button,
   pointer-events: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .products__title-desktop {
     display: block;
   }
@@ -1617,7 +1621,7 @@ button,
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .footer__nav-item--montage {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
@@ -1649,22 +1653,13 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1025px), (min-resolution: 2dppx) and (min-width: 1025px) {
-  .preview {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-desktop@2x.png") center no-repeat;
-    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-desktop@2x.png") center no-repeat;
-    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-desktop@2x.png") center no-repeat;
-    background-size: cover;
-  }
-}
-
 @media (max-width: 1919px) {
   .form form {
     width: 100%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 50px;
   }
@@ -1711,10 +1706,10 @@ button,
 
   .preview {
     min-height: 640px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-tablet@1x.png") center no-repeat;
-    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-tablet@1x.png") center no-repeat;
-    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-tablet@1x.png") center no-repeat;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/background/bg-main-tablet@1x.webp") 1x, url("../img/background/bg-main-tablet@2x.webp") 2x, url("../img/background/bg-main-tablet@1x.jpg") 1x, url("../img/background/bg-main-tablet@2x.jpg") 2x);
+    background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-tablet@1x.webp") 1x, url("../img/background/bg-main-tablet@2x.webp") 2x, url("../img/background/bg-main-tablet@1x.jpg") 1x, url("../img/background/bg-main-tablet@2x.jpg") 2x);
+    background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), -webkit-image-set(url("../img/background/bg-main-tablet@1x.webp") 1x, url("../img/background/bg-main-tablet@2x.webp") 2x, url("../img/background/bg-main-tablet@1x.jpg") 1x, url("../img/background/bg-main-tablet@2x.jpg") 2x);
+    background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-tablet@1x.webp") 1x, url("../img/background/bg-main-tablet@2x.webp") 2x, url("../img/background/bg-main-tablet@1x.jpg") 1x, url("../img/background/bg-main-tablet@2x.jpg") 2x);
   }
 
   .preview__wrap {
@@ -1912,16 +1907,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), (min-resolution: 2dppx) and (max-width: 1024px) {
-  .preview {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-tablet@2x.png") center no-repeat;
-    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-tablet@2x.png") center no-repeat;
-    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-tablet@2x.png") center no-repeat;
-    background-size: cover;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     padding: 0 25px;
   }
@@ -1945,10 +1931,10 @@ button,
 
   .preview {
     min-height: 560px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-mobile@1x.png") center no-repeat;
-    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-mobile@1x.png") center no-repeat;
-    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-mobile@1x.png") center no-repeat;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/background/bg-main-mobile@1x.webp") 1x, url("../img/background/bg-main-mobile@2x.webp") 2x, url("../img/background/bg-main-mobile@1x.jpg") 1x, url("../img/background/bg-main-mobile@2x.jpg") 2x);
+    background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-mobile@1x.webp") 1x, url("../img/background/bg-main-mobile@2x.webp") 2x, url("../img/background/bg-main-mobile@1x.jpg") 1x, url("../img/background/bg-main-mobile@2x.jpg") 2x);
+    background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), -webkit-image-set(url("../img/background/bg-main-mobile@1x.webp") 1x, url("../img/background/bg-main-mobile@2x.webp") 2x, url("../img/background/bg-main-mobile@1x.jpg") 1x, url("../img/background/bg-main-mobile@2x.jpg") 2x);
+    background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), image-set(url("../img/background/bg-main-mobile@1x.webp") 1x, url("../img/background/bg-main-mobile@2x.webp") 2x, url("../img/background/bg-main-mobile@1x.jpg") 1x, url("../img/background/bg-main-mobile@2x.jpg") 2x);
   }
 
   .preview__wrap {
@@ -1972,7 +1958,7 @@ button,
   }
 
   .preview__button {
-    min-width: 270px;
+    min-width: 100%;
     margin-left: 0;
     padding: 10px 30px;
     font-size: 14px;
@@ -2120,7 +2106,7 @@ button,
   }
 
   .form button {
-    width: 270px;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 25px;
   }
@@ -2244,6 +2230,7 @@ button,
   .accordion__trigger {
     padding-right: 30px;
     position: relative;
+    cursor: pointer;
   }
 
   .accordion__trigger::before,
@@ -2263,6 +2250,12 @@ button,
     transform: rotate(90deg);
   }
 
+  .accordion__trigger:focus,
+  .accordion__trigger:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid #ffffff;
+  }
+
   .accordion--open .accordion__trigger::after {
     display: none;
   }
@@ -2277,16 +2270,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
-  .preview {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/background/bg-main-mobile@2x.png") center no-repeat;
-    background: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-mobile@2x.png") center no-repeat;
-    background: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/bg-main-mobile@2x.png") center no-repeat;
-    background-size: cover;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -2301,7 +2285,7 @@ button,
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1919px) {
+@media (min-width: 1023px) and (max-width: 1919px) {
   .container {
     padding: 0 50px;
   }
@@ -2335,15 +2319,11 @@ button,
   .footer__logo-social-wrap {
     margin-right: auto;
   }
+}
 
+@media (min-width: 1024px) and (max-width: 1919px) {
   .footer__nav-list {
     -ms-grid-columns: 220px auto;
     grid-template-columns: 220px auto;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .form__wrap::before {
-    background-image: url("../img/background/paper-airplane@2x.png");
   }
 }
