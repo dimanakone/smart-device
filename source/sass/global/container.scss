@@ -4,14 +4,17 @@
   margin: 0 auto;
 
   @media (min-width: $vp-1024) and (max-width: $vp-1920) {
+    margin: 0 auto;
     padding: 0 50px;
   }
 
-  @media (max-width: $vp-1024) {
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    margin: 0 auto;
     padding: 0 50px;
   }
 
   @media (max-width: $vp-768) {
+    margin: 0 auto;
     padding: 0 25px;
   }
 }

@@ -7,11 +7,13 @@
   padding: 30px 0 35px;
   background: $black-to-bottom;
 
-  @media (max-width: $vp-1024) {
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    position: absolute;
     padding: 20px 0 25px;
   }
 
   @media (max-width: $vp-768) {
+    position: absolute;
     padding: 10px 0 20px;
   }
 }
@@ -32,11 +34,13 @@
     margin-right: auto;
   }
 
-  @media (max-width: $vp-1024) {
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
     margin-right: auto;
   }
 
   @media (max-width: $vp-768) {
+    margin-bottom: 9px;
+    margin-right: auto;
     width: 35px;
     height: 35px;
   }
@@ -60,15 +64,15 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: $vp-1024) {
-    width: auto;
-    margin-right: 22px;
-    display: grid;
-    grid-template-columns: 40px 40px;
-    gap: 20px;
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    width: 380px;
+    margin-right: 20px;
+    justify-content: flex-end;
   }
 
   @media (max-width: $vp-768) {
+    width: 210px;
+    justify-content: flex-end;
     margin-right: 10px;
   }
 }
@@ -76,12 +80,12 @@
 .header__contacts-item {
   margin-bottom: 9px;
 
-  @media (max-width: $vp-1024) {
-    margin-bottom: 5px;
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    margin-left: 16px;
   }
 
   @media (max-width: $vp-768) {
-    margin-bottom: 0;
+    margin-left: 16px;
   }
 }
 
@@ -111,8 +115,13 @@
 }
 
 .header__contacts-icon {
-  margin-bottom: 5px;
-  margin-left: 2px;
+  margin-bottom: -5px;
+  margin-left: 1px;
+
+  @media (max-width: $vp-1024) {
+    margin-bottom: 5px;
+    margin-left: 2px;
+  }
 }
 
 .header__contacts-text {
@@ -128,6 +137,7 @@
 
 .header__button {
   min-width: 160px;
+  max-width: 250px;
   display: block;
   padding: 10px 15px 12px;
   margin-left: 171px;
@@ -143,6 +153,8 @@
   background-color: transparent;
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
 
   @media (min-width: $vp-1024) and (max-width: $vp-1920) {
     margin-left: auto;

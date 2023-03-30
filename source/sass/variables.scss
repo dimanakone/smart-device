@@ -4,16 +4,16 @@
 // Default
 
 $color-default-black:               #000000;
-$color-default-white:               #ffffff;
+$color-default-white:               #f8fdff;
 
 // Project palette
-
 $color-deep-sky-blue:               #00b2ff;
 $color-black-pearl:                 #041827;
 $color-alice-blue:                  #f2f5f7;
 
 $color-border-light-gray:           #ebebeb;
 $color-border-white:                rgba(248, 253, 255, 0.7);
+
 
 $color-white-transparent:           rgba(255, 255, 255, 0.7);
 $color-black-transparent:           rgba(4, 24, 39, 0.5);
@@ -30,7 +30,7 @@ $black-to-bottom:                   linear-gradient(180deg, #041827 84.9%, rgba(
 
 $vp-320:                            320px;
 $vp-768:                            767px;
-$vp-1024:                           1023px;
+$vp-1024:                           1024px;
 $vp-1920:                           1919px;
 
 // Typography

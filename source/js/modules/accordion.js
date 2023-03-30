@@ -1,10 +1,8 @@
 const menuItems = document.querySelectorAll('.accordion');
 
 if (menuItems) {
-  menuItems.forEach((item, number) => {
-    if (number > 0) {
-      item.classList.remove('accordion--open');
-    }
+  menuItems.forEach((item) => {
+    item.classList.remove('accordion--open');
 
     item.addEventListener('click', () => {
       if (item.classList.contains('accordion--open')) {

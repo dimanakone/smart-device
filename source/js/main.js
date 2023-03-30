@@ -25,14 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     form.init();
     window.form = form;
-
-    const inputsPhone = document.querySelectorAll('[data-validate-type="phone"]');
-    inputsPhone.forEach((input) => {
-      window.form.initPhoneInput(input);
-    });
-
-    const feedback = document.querySelector('form');
-    window.form.validateForm(feedback);
   });
 });
 

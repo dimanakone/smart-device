@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-modal-black-transparent;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -63,11 +63,6 @@
     padding: 40px;
 
     background-color: $color-deep-sky-blue;
-
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
   }
 
   &__close-btn {

@@ -17,6 +17,7 @@
 
     &::after {
       transform: rotate(90deg);
+      transition: 0.6s linear;
     }
 
     &:focus,
@@ -30,19 +31,29 @@
 .accordion--open .accordion__trigger {
   @media (max-width: $vp-768) {
     &::after {
-      display: none;
+      transform: rotate(0deg);
+      transition: 0.6s linear;
     }
   }
 }
 
 .accordion__content {
   @media (max-width: $vp-768) {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      padding-top 0.4s linear,
+      max-height 0.4s linear;
+
   }
 }
 
 .accordion--open .accordion__content {
   @media (max-width: $vp-768) {
-    display: grid;
+    padding-top: 18px;
+    max-height: 1000px;
+    transition:
+      max-height 0.8s linear,
+      padding-top 0.4s linear;
   }
 }
