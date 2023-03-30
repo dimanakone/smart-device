@@ -35,6 +35,53 @@
   }
 }
 
+.advantages__item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-deep-sky-blue;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.advantages__item p {
+  min-height: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+
+  @media (min-width: $vp-768) and (max-width: $vp-1024) {
+    min-height: 165px;
+  }
+
+  @media (max-width: $vp-768) {
+    min-height: 140px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.advantages__item:hover h3,
+.advantages__item:hover p,
+.advantages__item:hover .advantages__icon {
+  color: $color-alice-blue;
+  fill: $color-alice-blue;
+}
+
 .advantages__item {
   padding: 41px 41px 35px;
   background: linear-gradient(to right, $color-deep-sky-blue 0, $color-deep-sky-blue 5px, transparent 5px);
@@ -98,51 +145,4 @@
     height: 30px;
     margin-bottom: 20px;
   }
-}
-
-.advantages__item h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  color: $color-deep-sky-blue;
-
-  @media (min-width: $vp-768) and (max-width: $vp-1024) {
-    margin-bottom: 7px;
-  }
-
-  @media (max-width: $vp-768) {
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
-
-.advantages__item p {
-  min-height: 120px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-black-pearl;
-
-  @media (min-width: $vp-768) and (max-width: $vp-1024) {
-    min-height: 165px;
-  }
-
-  @media (max-width: $vp-768) {
-    min-height: 140px;
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
-.advantages__item:hover h3,
-.advantages__item:hover p,
-.advantages__item:hover .advantages__icon {
-  color: $color-alice-blue;
-  fill: $color-alice-blue;
 }

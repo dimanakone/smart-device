@@ -61,6 +61,7 @@
   @media (max-width: $vp-768) {
     display: flex;
     justify-content: center;
+    margin-left: -2px;
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -88,7 +89,7 @@
     width: auto;
     max-width: 350px;
     margin-left: 0;
-    margin-right: -7px;
+    margin-right: -5px;
     margin-top: 5px;
     display: flex;
     flex-wrap: wrap;

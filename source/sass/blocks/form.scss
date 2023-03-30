@@ -17,7 +17,7 @@
 .form__wrap {
   position: relative;
   padding-top: 166px;
-  padding-bottom: 251px;
+  padding-bottom: 249px;
   padding-left: 620px;
 
   @media (min-width: $vp-1024) and (max-width: $vp-1920) {
@@ -32,7 +32,7 @@
 
   @media (max-width: $vp-768) {
     padding-top: 46px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
     padding-left: 0;
   }
 
@@ -133,7 +133,7 @@
 
 .form__elements-wrap {
   width: 580px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   margin-left: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -214,14 +214,15 @@
 
 .form__button-wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 
   @media (max-width: $vp-768) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   &--modal {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
