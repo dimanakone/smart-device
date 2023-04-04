@@ -445,7 +445,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #041827;
+  background-color: #f8fdff;
 }
 
 main {
@@ -1143,7 +1143,7 @@ button,
 }
 
 .form form {
-  width: 595px;
+  width: 100%;
   margin-left: auto;
 }
 
@@ -1168,7 +1168,7 @@ button,
 }
 
 .form__elements-wrap {
-  width: 580px;
+  width: auto;
   margin-bottom: 35px;
   margin-left: 6px;
   display: -ms-grid;
@@ -1679,7 +1679,7 @@ button,
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .footer__nav-item--montage {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
@@ -1717,7 +1717,7 @@ button,
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .header__contacts-link {
     display: block;
     padding: 10px;
@@ -1783,7 +1783,7 @@ button,
   }
 
   .header__contacts {
-    width: 210px;
+    width: 80%;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -2195,7 +2195,7 @@ button,
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1919px) {
+@media (min-width: 1023px) and (max-width: 1919px) {
   .container {
     margin: 0 auto;
     padding: 0 50px;
@@ -2235,7 +2235,7 @@ button,
   }
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .container {
     margin: 0 auto;
     padding: 0 50px;
@@ -2251,7 +2251,7 @@ button,
   }
 
   .header__contacts {
-    width: 380px;
+    width: 408px;
     margin-right: 20px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
