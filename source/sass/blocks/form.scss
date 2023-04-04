@@ -64,7 +64,7 @@
 }
 
 .form form {
-  width: 595px;
+  width: 100%;
   margin-left: auto;
 
   @media (max-width: $vp-1920) {
@@ -132,7 +132,7 @@
 }
 
 .form__elements-wrap {
-  width: 580px;
+  width: auto;
   margin-bottom: 35px;
   margin-left: 6px;
   display: grid;

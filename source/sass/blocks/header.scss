@@ -65,13 +65,13 @@
   justify-content: space-between;
 
   @media (min-width: $vp-768) and (max-width: $vp-1024) {
-    width: 380px;
+    width: 408px;
     margin-right: 20px;
     justify-content: flex-end;
   }
 
   @media (max-width: $vp-768) {
-    width: 210px;
+    width: 80%;
     justify-content: flex-end;
     margin-right: 10px;
   }
